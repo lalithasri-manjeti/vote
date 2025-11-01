@@ -9,12 +9,12 @@ const router = express.Router();
 // @route   POST /api/auth/register
 // @desc    Register a new user
 // @access  Public
-router.post('/register', validateRegister, validateRequest, register);
+router.post('/register',  register);
 
 // @route   POST /api/auth/login
 // @desc    Login user
 // @access  Public
-router.post('/login', validateLogin, validateRequest, login);
+router.post('/login',  login);
 
 // @route   GET /api/auth/me
 // @desc    Get current user
